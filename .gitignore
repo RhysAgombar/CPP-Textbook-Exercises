@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.vsidx
+/CPP-Textbook-Exercises/.vs/CPP-Textbook-Exercises/v17
+/.vs
+/Ch2/x64/Debug/Ch2.tlog
+/Ch2/x64/Debug
