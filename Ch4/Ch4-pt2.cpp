@@ -4,16 +4,17 @@ int main()
 {
     // Drills for Ch4
 
-    cout << "Please enter two doubles.\n";
+    cout << "Please enter a double.\n";
     double input = 0;
-    vector<double> in_vec;
+    double smallest = 0.0;
+    double largest = 0.0;
 
     while (cin >> input) {
-        in_vec.push_back(input);
+        cout << "Received: " << input;
 
         if (in_vec.size() > 1) {
             cout << "Number 1: " << in_vec[0] << " \nNumber 2: " << in_vec[1] << "\n";
-            
+
             double smaller = 0;
             double larger = 0;
             if (in_vec[1] > in_vec[0]) {
@@ -34,30 +35,7 @@ int main()
 
             in_vec.clear();
         }
-               
-    }
-    cout << "Part 1 Complete!\n";
-
-    string buffer = "";
-    cin >> buffer;
-
-    cout << "Please enter a double.\n";
-    double input_single = 0;
-    double smallest = 0.0;
-    double largest = 0.0;
-
-    while (cin >> input_single) {
-        cout << "Received: " << input_single;
-
-        if (input_single > largest) {
-            largest = input_single;
-
-        }
-        if (input_single < smallest) {
-            smallest = input_single;
-        }
-        cout << "Largest so far: " << largest << " \nSmallest so far: " << smallest << "\n";
 
     }
-    cout << "Part 2 Complete!\n";
+    cout << "Program Complete!\n";
 }
