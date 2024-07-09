@@ -5,6 +5,6 @@
 *.vsidx
 /CPP-Textbook-Exercises/.vs/CPP-Textbook-Exercises/v17
 /.vs
-/Ch2/x64/Debug/Ch2.tlog
-/Ch2/x64/Debug
-/Ch4/.vs/Ch4/v17
+/*/x64/Debug
+/*/.vs/
+/*/*/x64/Debug/
