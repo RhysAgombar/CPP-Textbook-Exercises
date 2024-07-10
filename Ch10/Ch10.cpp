@@ -1,20 +1,38 @@
-// Ch10.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include "Point.h"
+#include <vector>
 
-#include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    PNS::Point test_point{ 10, 10 };
+    cout << "Test Coordinate: ";
+    cout << test_point;
+    cout << '\n';
+
+    vector<PNS::Point> original_points;
+
+    while (original_points.size() < 7) {
+        cout << "Please enter a coordinate in the format '(x (int),y (int))'.\n";
+        PNS::Point coord;
+        cin >> coord;
+        if (cin.fail()) {
+            cout << "Invalid Coordinate Format!\n";
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cout.clear();
+            continue;
+        }
+        else {
+            cout << "Confirmed: ";
+            cout << coord;
+            cout << '\n';
+            original_points.push_back(coord);
+        }
+    }
+
+    cout << "Full coord list:\n";
+    for (int i = 0; i < original_points.size(); i++) {
+        cout << original_points[i] << '\n';
+    }
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
