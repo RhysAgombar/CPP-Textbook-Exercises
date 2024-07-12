@@ -18,5 +18,13 @@
     <ClCompile Include="Ch11.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="poly.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="poly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
