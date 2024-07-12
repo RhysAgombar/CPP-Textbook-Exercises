@@ -15,3 +15,15 @@ void D1::vf(){
 void D1::f() {
 	std::cout << "D1::f()" << std::endl;
 }
+
+void D2::pvf() {
+	std::cout << "D2::pvf()" << std::endl;
+}
+
+void D21::pvf() {
+	std::cout << D21::data_member << std::endl;
+}
+
+void D22::pvf() {
+	std::cout << D22::data_member << std::endl;
+}
